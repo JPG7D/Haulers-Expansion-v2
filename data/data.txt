@@ -1,0 +1,132 @@
+#hauler guide
+#cost = 510000 + (920000 * num of crates)
+#shields = 2100 + (400 * num of crates)
+#hull = 2200 + (1500 * num of crates)
+#req. crew = 3
+#bunks = 12
+#mass 140 + (110 * num of crates)
+#drag 9.5 + (1 * num of crates)
+#heat dissipation .6
+#fuel cap. = 400
+#cargo = (130 * num of crates)
+#outfit space 350
+#weapon cap. 140
+#engine cap.  = 80
+#blast radius = 40 + (20 * num of crates)
+#shield damage = 400 + (200 * num of crates)
+#hull damage = 200 + (100 * num of crates)
+#hit force = 600 + (300 * num of crates)
+
+shipyard "All Haulers"
+       	"Haul"
+	"Hauler Extended"
+       
+planet Glaze
+        shipyard "All Haulers"
+
+ship "Haul"
+	sprite "ship/hauler storage"
+	attributes
+		category "Transport"
+		"cost" 10000
+		"shields" 100
+		"hull" 100
+		"required crew" 1
+		"bunks" 3
+		"mass" 50
+		"drag" 9.5
+		"heat dissipation" .6
+		"fuel capacity" 200
+		"cargo space" 50
+		"outfit space" 350
+		"weapon capacity" 140
+		"engine capacity" 80
+        	weapon
+			"blast radius" 40
+			"shield damage" 400
+			"hull damage" 200
+			"hit force" 600
+
+	outfits
+		"Meteor Missile Launcher" 2
+		"Meteor Missile" 70
+		"Quad Blaster Turret" 2
+		"Heavy Anti-Missile Turret" 2
+		
+		"S3 Thermionic"
+		"LP072a Battery Pack"
+		"D23-QP Shield Generator"
+		"Small Radar Jammer"
+		
+		"Greyhound Plasma Thruster"
+		"Impala Plasma Steering"
+		"Hyperdrive"
+
+	gun -1 0
+	gun -1 0
+	turret -2 -1
+	turret 2 -1
+	turret -2 1
+	turret 2 1
+	engine 0 -5
+	engine 0 -5
+	explode "tiny explosion" 15
+	explode "small explosion" 20
+	explode "medium explosion" 10
+	explode "large explosion" 2
+	"final explode" "final explosion small"
+	description "The cargo space of a Hauler that has been modified to include weapons, fuel, and outfits."
+
+ship "Hauler Extended"
+	sprite "ship/hauler fat"
+	attributes
+		category "Transport"
+		"cost" 500000
+		"shields" 3000
+		"hull" 5000
+		"required crew" 1
+		"bunks" 20
+		"mass" 200
+		"drag" 9.5
+		"heat dissipation" .6
+		"fuel capacity" 200
+		"cargo space" 5000
+		"outfit space" 500
+		"weapon capacity" 300
+		"engine capacity" 300
+        	weapon
+			"blast radius" 40
+			"shield damage" 400
+			"hull damage" 200
+			"hit force" 600
+
+	outfits
+		"Meteor Missile Launcher" 2
+		"Meteor Missile" 70
+		"Quad Blaster Turret" 2
+		"Heavy Anti-Missile Turret" 2
+		
+		"S3 Thermionic"
+		"LP072a Battery Pack"
+		"D23-QP Shield Generator"
+		"Small Radar Jammer"
+		
+		"Greyhound Plasma Thruster"
+		"Impala Plasma Steering"
+		"Hyperdrive"
+
+	gun 5 0
+	gun -5 0
+	turret 2 2
+	turret -2 -2
+	turret 2 -2
+	turret -2 2
+	engine 0 -20
+	engine 0 -20
+	explode "tiny explosion" 15
+	explode "small explosion" 20
+	explode "medium explosion" 10
+	explode "large explosion" 2
+	"final explode" "final explosion small"
+	description "A Hauler with pretty good structural integrity. In other words, the Hauler Crystal Maze Edtion."
+
